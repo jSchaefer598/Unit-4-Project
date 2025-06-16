@@ -20,6 +20,7 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: grid;
 }
 
 .questions h4 {
@@ -47,4 +48,12 @@ body {
     width: 45%;
     display: grid;
     text-decoration: none;
+}
+
+button.choices {
+    background-color: #29b6f6; /* Bright blue */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 5px;
 }
