@@ -27,7 +27,7 @@ body {
 }
 
 .questions img {
-    width: 100%; /* Make images responsive */
+    width: 60%; /* Make images responsive */
     height: auto;
     border-radius: 8px;
     margin-top: 10px;
@@ -41,4 +41,10 @@ body {
     margin-top: 20px;
     border-radius: 8px;
     font-size: 1.2em;
+}
+
+.choices{
+    width: 45%;
+    display: grid;
+    text-decoration: none;
 }
