@@ -1,31 +1,23 @@
 // JavaScript goes here.
-let pono = document.querySelector("#pono");
-let mana = document.querySelector("#mana");
-let ohana = document.querySelector("#ohana");
-let aloha = document.querySelector("#aloha");
-let calm = document.querySelector("#calm");
-let hurt = document.querySelector("#hurt");
-let bite = document.querySelector("#bite");
-let laugh = document.querySelector("#laugh");
-let momFriend = document.querySelector("#mom-friend");
-let joker = document.querySelector("#joker");
-let wildCard = document.querySelector("#wild-card");
-let fixer = document.querySelector("#fixer");
-let jumba = document.querySelector("#jumba");
-let lilo = document.querySelector("#lilo");
-let pleakley = document.querySelector("#pleakley");
-let stitch = document.querySelector("#stitch");
-let weird = document.querySelector("#weird");
-let careless = document.querySelector("#careless");
-let trying = document.querySelector("#trying");
-let wild = document.querySelector("#wild");
-let calmDown = document.querySelector("#calm-down");
-let ignored = document.querySelector("#ignored");
-let routines = document.querySelector("#routines");
-let changePlans = document.querySelector("#change-plans");
-let empathy = document.querySelector("#empathy");
-let loyalty = document.querySelector("#loyalty");
-let creativity = document.querySelector("#creativity");
-let resilience = document.querySelector("#resilience");
+let button = document.querySelector("button");
 
+let resultText = document.querySelector(".result-text");
 
+button.addEventListener("click", function() {
+    let word = document.querySelector(".word").value;
+    let vibe = document.querySelector(".vibe").value;
+    let role = document.querySelector(".role").value;
+    let disney = document.querySelector(".disney");
+    let understood = document.querySelector(".understood").value;
+    let petPeeve = document.querySelector(".pet-peeve").value;
+    let strength = document.querySelector(".strength").value;
+    if(word === "Ohana - Family means nobody gets left behind" || word ==="Aloha - Love, peace, hello, and goodbye" && vibe === "Be hurt, but try to understand why" && role === "The wild card" || role === "The joker" && disney === "Lilo giving Pudge the fish a peanut butter sandwich"  && understood === "I act wild, but I care a lot more than I let out" || understood === "I'm not weird - I just see the world differently" && petPeeve === 'People telling me to "calm down"' || petPeeve === 'Being ignored or dismissed' || petPeeve === 'Boring routines or small talk' && strength === 'Empathy - I feel things deeply' || strength === 'Creativity - I make magic out of chaos'){
+        resultText.innerHTML = "You got Lilo!";
+    } else if(word === "Ohana - Family means nobody gets left behind" || word === "Pono - Righteousness, balance" || word === "Mana - Spiritual energy, power" && vibe ==="Stay calm but replay it in your head for days" || vibe === "Laugh and probably agree"  && role === "The mom friend" || role === "The fixer" && disney === "Jumba gleefully explaining chaos to the council" || disney === "Pleakley panicking in a disguise" && understood === "I'm trying, even if I seem like a mess" || understood === "I'm not careless - I just think differently" && petPeeve === 'People telling me to "calm down"' || petPeeve === 'Plans changing last minute' && strength === 'Resilience - I bounce back, no matter what' || strength === "Loyalty - I'd do anything for the people I love"){
+        resultText.innerHTML = "You got Nani";
+    } else if(word === "Ohana - Family means nobody gets left behind" && vibe === "Bite them.Jk.(Not Really.)" || vibe === "Be hurt, but try to understand why" && role === "The wild card" && disney === "Stitch destroying Lilo's drawing then feeling bad" && understood === "I act wild, but I care a lot more than I let out" && petPeeve === 'People telling me to "calm down"' && strength === "Loyalty - I'd do anything for the people I love"){
+        resultText.innerHTML = "You got Stitch!";
+    } else {
+        resultText.innerHTML = "There is no Lilo and Stitch character for you.";
+    }
+});
