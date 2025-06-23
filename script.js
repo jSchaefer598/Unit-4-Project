@@ -20,8 +20,6 @@ button.addEventListener("click", function() {
         resultText.innerHTML = "You got Stitch!";
     } else if(word === "Aloha" && vibe === "Hurt" || vibe === "Laugh" && role === "Mom" || role === "Fixer" && disney === "Pleakley" && understood === "Weird" || understood === "Trying" && petPeeve === "Calm down" || petPeeve === "Change plans" && strength === "Empathy" || strength === "Loyalty"){
         resultText.innerHTML = "You got Pleakley!";
-    // } else if(word === "Aloha" || word === "Pono" && vibe === "Calm" || vibe === "Laugh" && role === "Wild card" && disney === "Jumba" && understood === "Weird" || understood === "Trying" && petPeeve === "Routines" && strength === "Loyalty" || strength === "Empathy"){
-    //     resultText.innerHTML = "You got Jumba!";
     } else {
         resultText.innerHTML = "There is no Lilo and Stitch character for you.";
     }
