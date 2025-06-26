@@ -12,7 +12,7 @@ let petPeeve = document.querySelector(".pet-peeve").value;
 let strength = document.querySelector(".strength").value;
 
 button.addEventListener("click", function() {
-    if(word === "Ohana" || word ==="Aloha" && vibe === "Hurt" && role === "Wild card" || role === "Joker" && disney === "Lilo"  && understood === "Wild" || understood === "Weird" && petPeeve === "Calm down" || petPeeve === "Ignored" || petPeeve === "Routines" && strength === "Empathy" || strength === 'Creativity'){
+    if(word === "Ohana" || word ==="Aloha" && vibe === "Hurt" || vibe === "Bite" && role === "Wild card" || role === "Joker" && disney === "Lilo"  && understood === "Wild" || understood === "Weird" && petPeeve === "Calm down" || petPeeve === "Ignored" || petPeeve === "Routines" && strength === "Empathy" || strength === 'Creativity'){
         resultText.innerHTML = "You got Lilo!";
     } else if(word === "Ohana" || word === "Pono" || word === "Mana" && vibe ==="Calm" || vibe === "Laugh"  && role === "Mom" || role === "Fixer" && disney === "Jumba" || disney === "Pleakley" && understood === "Trying" || understood === "Careless" && petPeeve === "Calm down" || petPeeve === "Change plans" && strength === 'Resilience' || strength === "Loyalty"){
         resultText.innerHTML = "You got Nani";
